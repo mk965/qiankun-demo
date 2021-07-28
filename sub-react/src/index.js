@@ -3,16 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+
 
 
 function render() {
   ReactDOM.render(
-    <BrowserRouter basename={window.__POWERED_BY_QIANKUN__ ? '/app-react' : '/'}>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
-    </BrowserRouter>,
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
     document.getElementById('sub-react-root')
   );
 }
