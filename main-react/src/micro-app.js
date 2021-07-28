@@ -7,6 +7,15 @@ const microApps = [
     props: {
       routerBase: '/sub-react'
     }
+  },
+  {
+    name: 'sub-vue',
+    entry: '//localhost:9002/',
+    activeRule: '/sub-vue',
+    container: '#subapp-viewport', // 子应用挂载的div
+    props: {
+      routerBase: '/sub-vue'
+    }
   }
 ]
 
