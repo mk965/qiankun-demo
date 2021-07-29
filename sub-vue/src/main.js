@@ -38,7 +38,7 @@ function render(props = {}) {
     router,
     // store,
     render: h => h(App),
-  }).$mount(container ? container.querySelector('#app') : '#app');
+  }).$mount(container ? container.querySelector('#sub-vue') : '#sub-vue');
 }
 
 if (!window.__POWERED_BY_QIANKUN__) {
