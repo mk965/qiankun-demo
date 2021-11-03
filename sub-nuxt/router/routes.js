@@ -1,4 +1,4 @@
-const BASE = window.__POWERED_BY_QIANKUN__ ? '/nuxt' : ''
+const BASE = window.__POWERED_BY_QIANKUN__ ? '/sub-nuxt' : ''
 
 function dynamicImport(path) {
   return import(`~/views/${path}/index.vue`).then(m => m.default || m)

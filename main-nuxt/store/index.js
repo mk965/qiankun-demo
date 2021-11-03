@@ -81,36 +81,42 @@ async function getMenus() {
   return {
     code: 0,
     payload: [
-      // {
-      //   name: 'react-app',
-      //   activeRule: '/react',
-      //   entry: 'http://localhost:9001/',
-      // },
       {
-        name: 'react-app1',
-        activeRule: '/react1',
-        entry: 'http://localhost:9002/',
+        name: 'sub-react',
+        entry: '//localhost:9001/',
+        activeRule: '/sub-react',
+        container: '#subapp-viewport', // 子应用挂载的div
+        props: {
+          routerBase: '/sub-react'
+        }
       },
-      // {
-      //   name: 'nuxt-app',
-      //   activeRule: '/nuxt',
-      //   entry: 'http://127.0.0.1:7102/',
-      // },
-      // {
-      //   name: 'nuxt-app2',
-      //   activeRule: '/nuxt2',
-      //   entry: 'http://127.0.0.1:7103/',
-      // },
       {
-        name: 'aone-api-frontend',
-        activeRule: '/aone',
-        entry: 'http://127.0.0.1:7104/aone/',
+        name: 'sub-vue',
+        entry: '//localhost:9002/',
+        activeRule: '/sub-vue',
+        container: '#subapp-viewport', // 子应用挂载的div
+        props: {
+          routerBase: '/sub-vue'
+        }
       },
-      // {
-      //   name: 'cdp-react',
-      //   activeRule: '/cdp-react',
-      //   entry: 'http://127.0.0.1:8080/cdp-react/',
-      // },
+      {
+        name: 'sub-vue3',
+        entry: '//localhost:9003/',
+        activeRule: '/sub-vue3',
+        container: '#subapp-viewport', // 子应用挂载的div
+        props: {
+          routerBase: '/sub-vue3'
+        }
+      },
+      {
+        name: 'sub-nuxt',
+        entry: '//localhost:9004/',
+        activeRule: '/sub-nuxt',
+        container: '#subapp-viewport', // 子应用挂载的div
+        props: {
+          routerBase: '/sub-nuxt'
+        }
+      }
     ],
     message: 'success',
   }

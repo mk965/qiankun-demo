@@ -25,6 +25,15 @@ const microApps = [
     props: {
       routerBase: '/sub-vue3'
     }
+  },
+  {
+    name: 'sub-nuxt',
+    entry: '//localhost:9004/',
+    activeRule: '/sub-nuxt',
+    container: '#subapp-viewport', // 子应用挂载的div
+    props: {
+      routerBase: '/sub-nuxt'
+    }
   }
 ]
 

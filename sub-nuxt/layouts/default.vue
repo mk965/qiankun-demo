@@ -2,7 +2,7 @@
   <div class="nuxt-app">
     <header>
       <Logo />
-      <h1 class="title">nuxt-sub-app</h1>
+      <h1 class="title">sub-nuxt</h1>
     </header>
     <Nuxt />
   </div>
